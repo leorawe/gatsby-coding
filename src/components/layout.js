@@ -29,6 +29,7 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
+           <div>social media icons???</div>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
