@@ -1,32 +1,34 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+
+import MenuItem from './menuItem'
 
 const Header = () => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `gray`,
+      marginBottom: `1rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `.5rem .5rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          Menu Goes Here
-        </Link>
-      </h1>
+      <div style={{ 
+            margin: 0,
+             }}>
+        <ul style={{ 
+            margin: 0,
+            listStyleType: `none`,
+            display: `flex`
+             }}>
+             <MenuItem />
+             <MenuItem />
+        </ul>
+      </div>
     </div>
   </header>
 )
