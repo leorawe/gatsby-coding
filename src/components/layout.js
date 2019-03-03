@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <main className="content">{children}</main>
           <footer>
            <div>social media icons???</div>
             © {new Date().getFullYear()}, Built with

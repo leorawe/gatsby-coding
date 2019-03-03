@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `coding samples`,
-    description: `Add a description.  See LeoraW's React apps.  More sooner or later.`,
+    description: `See LeoraW's React apps.  Coding Samples built with React.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -13,6 +13,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project`,
+        path: `${__dirname}/data`,
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

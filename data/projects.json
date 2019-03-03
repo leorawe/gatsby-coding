@@ -4,15 +4,15 @@
       "slug": "project-calc",
       "source": "https://github.com/leorawe/calc-react",
       "url": "https://calc-react.netlify.com/",
-      "image": "./images/calc-react-400px.jpg",
+      "image": "./images/calculator-react.png",
       "description": "Color palette for buttons; Save State in array"
     },
     {
-      "title": "IEX Trade Symbol App",
+      "title": "IEX Trade App",
       "slug": "project-iex",
       "source": "https://github.com/leorawe/react-iex",
       "url": "https://iex-app.netlify.com/",
-      "image": "./images/iex-800px.jpg",
+      "image": "./images/iex-react.png",
       "description": "Trading App shows data when user types in trade symbol"
     },
     {
@@ -20,7 +20,7 @@
         "slug": "project-reddit",
         "source": "https://github.com/leorawe/react-project",
         "url": "https://leorawe.github.io/react-project/",
-        "image": "./images/reddit-api-400px.jpg",
+        "image": "./images/reddit-api.png",
         "description": "Learn about technologies of Drupal, React, JavaScript via Reddit API"
       }
   ]

@@ -5,10 +5,11 @@ import React from 'react'
 const Footer = () => {
   return (
     <div>
-      social media apps
+      social media apps - needs image and link - do this in json?
+      https://github.com/react-icons/react-icons
       <div style={{ display: `flex` }}>
       {/* <p><a href="https://codepen.io/leoraw/"><img src="../images/social/codepen-50px.jpg" alt="CodePen"></a> &nbsp; <a href="https://twitter.com/leoraw"><img src="../images/social/twitter-icon.png" alt="Leora Wenger on Twitter"></a> &nbsp; <a href="http://www.pinterest.com/leorawenger/"><img src="../images/social/pinterest.png" alt="Pinterest" /></a> &nbsp; <a href="http://www.linkedin.com/in/leoraw/"><img src="../images/social/linkedin.png" alt="Leora Wenger on LinkedIn" /></a> &nbsp; <a href="https://github.com/leorawe"><img src="../images/social/github-mark-50px.png" alt="GitHub" /></a></p></div>
-        */} images
+        */} 
         </div>
     </div>
   )
