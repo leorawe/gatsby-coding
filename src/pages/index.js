@@ -9,7 +9,8 @@ import ProjectPreview from "../components/project-preview"
 const ProjectWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin: 5rem auto;
+    margin: 1rem auto;
+    justify-content: center;
 `
 
 const IndexPage = () => {

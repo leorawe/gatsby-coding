@@ -1,36 +1,33 @@
 import PropTypes from "prop-types"
 import React from "react"
+import styled from 'styled-components'
 
 import MenuItem from './menuItem'
 
+const HeadWrap = styled.div`
+    background: #e9e9e9;
+    padding: 0 calc((100vw - 800px)/2);
+    margin: 0 auto;
+`
+const MenuContainer = styled.ul`
+    background: pink;
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+`
 const Header = () => (
-  <header
-    style={{
-      background: `gray`,
-      marginBottom: `1rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `.5rem .5rem`,
-      }}
-    >
-      <div style={{ 
-            margin: 0,
-             }}>
-        <ul style={{ 
-            margin: 0,
-            listStyleType: `none`,
-            display: `flex`
-             }}>
+  <HeadWrap>
+    <MenuContainer>
+    <div>img</div>
              <MenuItem />
              <MenuItem />
-        </ul>
-      </div>
-    </div>
-  </header>
+             <MenuItem />
+             <MenuItem />
+             <MenuItem />
+        </MenuContainer>
+    </HeadWrap>
 )
 
 Header.propTypes = {
