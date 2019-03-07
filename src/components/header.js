@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import {graphql, useStaticQuery} from 'gatsby'
 import styled from 'styled-components'
 
 import MenuItem from './menuItem'
@@ -17,18 +18,38 @@ const MenuContainer = styled.ul`
     justify-content: stretch;
     flex-wrap: wrap;
 `
-const Header = () => (
+const Header = () => {
+  const data = useStaticQuery(graphql`
+  {
+    allMenuJson{
+      edges{
+        node{
+          linktitle
+          url
+        }
+      }
+    }
+  }
+  `);
+  const menulinks = data.allMenuJson.edges;
+  return(
   <HeadWrap>
     <MenuContainer>
     <div>img</div>
-             <MenuItem />
-             <MenuItem />
-             <MenuItem />
-             <MenuItem />
-             <MenuItem />
+    {menulinks.map(({node: menulink})=>{
+        const linktitle = menulink.linktitle;
+        const url = menulink.url;
+        return (
+             <MenuItem 
+             linktitle={linktitle}
+             url={url}
+             />
+             );
+        })}
         </MenuContainer>
     </HeadWrap>
-)
+    )
+  }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

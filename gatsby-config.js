@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/data`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `menu`,
+        path: `${__dirname}/data`,
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
