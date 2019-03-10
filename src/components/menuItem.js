@@ -3,19 +3,24 @@ import styled from 'styled-components'
 
 const LinkContainer = styled.li`
    margin: 0;
-   padding: 5px 10px;
+   padding: 0 10px;
    flex: 1;
-   font-size: .85rem;
+`
+const StyledLink = styled.a`
+   margin: 0;
+   color: #333;
+   text-decoration: none;
+   font-size: .75rem;
+    &:hover {
+    color: #666;
+    text-decoration: underline;
+  }
 `
 
 const MenuItem = ({linktitle, url}) => {
   return (
     <LinkContainer>
-      <a href={url} style={{ 
-        margin: 0,
-        color: `white`,
-        textDecoration: `none`
-         }}>{linktitle}</a>
+      <StyledLink href={url}>{linktitle}</StyledLink>
     </LinkContainer>
   )
 }

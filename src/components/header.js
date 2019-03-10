@@ -4,19 +4,28 @@ import {graphql, useStaticQuery} from 'gatsby'
 import styled from 'styled-components'
 
 import MenuItem from './menuItem'
+import logo from '../images/leoraw-logo-80px.png'
 
 const HeadWrap = styled.div`
     background: #e9e9e9;
-    padding: 0 calc((100vw - 800px)/2);
+    padding: 0 calc((100vw - 700px)/2);
     margin: 0 auto;
+    margin-bottom: 20px;
+    height: 25px;
 `
 const MenuContainer = styled.ul`
-    background: pink;
     list-style-type: none;
     margin: 0 auto;
     display: flex;
     justify-content: stretch;
     flex-wrap: wrap;
+` 
+
+const LogoWrap = styled.div`
+    width: 40px;
+    height: 40px;
+    padding: 0 5px;
+   
 `
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -35,7 +44,7 @@ const Header = () => {
   return(
   <HeadWrap>
     <MenuContainer>
-    <div>img</div>
+    <LogoWrap><img src={logo} alt="leoraW dot com logo" /></LogoWrap>
     {menulinks.map(({node: menulink})=>{
         const linktitle = menulink.linktitle;
         const url = menulink.url;

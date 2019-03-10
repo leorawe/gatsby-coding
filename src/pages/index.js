@@ -9,7 +9,7 @@ import ProjectPreview from "../components/project-preview"
 const ProjectWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem auto;
+    margin: .5rem auto;
     justify-content: center;
 `
 
