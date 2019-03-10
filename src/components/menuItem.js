@@ -10,7 +10,7 @@ const StyledLink = styled.a`
    margin: 0;
    color: #333;
    text-decoration: none;
-   font-size: .75rem;
+   font-size: .65rem;
     &:hover {
     color: #666;
     text-decoration: underline;
