@@ -11,6 +11,11 @@ const ProjectInner = styled.div`
     margin-right: 5px;
     border-radius: 20px;
     border: 1px solid #999999;
+    p {
+      font-size: .65rem;
+      line-height: .75rem;
+      padding: 10px 0;
+      }
 `
 const ProjectPreview = ( {imageData, title, description}) => {
   return (

@@ -4,7 +4,9 @@ import styled from 'styled-components'
 const LinkContainer = styled.li`
    margin: 0;
    padding: 0 10px;
-   flex: 1;
+   &:nth-child(4) {
+      flex: 1;
+    }
 `
 const StyledLink = styled.a`
    margin: 0;
@@ -14,6 +16,7 @@ const StyledLink = styled.a`
     &:hover {
     color: #666;
     text-decoration: underline;
+   
   }
 `
 
