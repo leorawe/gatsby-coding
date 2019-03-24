@@ -39,7 +39,7 @@ const IndexPage = () => {
   
   return (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Coding Samples by Leora Wenger" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Coding Samples</h1>
     <ProjectWrap>
     {projects.map(({node: project})=>{
