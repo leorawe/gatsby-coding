@@ -22,6 +22,8 @@ const IndexPage = () => {
           description
           title
           slug
+          source
+          url
           image {
             childImageSharp {
               fluid {
@@ -45,11 +47,15 @@ const IndexPage = () => {
     const description = project.description;
     const imageData = project.image.childImageSharp.fluid;
     const slug = project.slug;
+    const source = project.source;
+    const url = project.url;
   return(
     <ProjectPreview
       title={title}
       description={description}
       imageData={imageData}
+      source={source}
+      url={url}
       key={slug}
     />
     );

@@ -5,7 +5,7 @@
       "source": "https://github.com/leorawe/calc-react",
       "url": "https://calc-react.netlify.com/",
       "image": "./images/calculator-react.png",
-      "description": "Color palette for buttons; Save State in array"
+      "description": "Color palette for buttons. Action is performed based on whether user hits a number, an operator button or the equal button. Save State in array; "
     },
     {
       "title": "IEX Trade App",
@@ -13,7 +13,7 @@
       "source": "https://github.com/leorawe/react-iex",
       "url": "https://iex-app.netlify.com/",
       "image": "./images/iex-react.png",
-      "description": "Trading App shows data when user types in trade symbol"
+      "description": "Trading App shows data such as last trade, CEO of company, company description when user types in trade symbol"
     },
     {
         "title": "Reddit API App",

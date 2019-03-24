@@ -15,15 +15,26 @@ const ProjectInner = styled.div`
       font-size: .65rem;
       line-height: .75rem;
       padding: 10px 0;
+      
       }
+    a, a:link, a:visited, :any-link {
+      text-decoration: none;
+      border-bottom: 2px dotted #ddd;
+      color: #666666;
+      }  
+    a:hover {
+      border-bottom: 2px solid #ddd;
+    }
 `
-const ProjectPreview = ( {imageData, title, description}) => {
+const ProjectPreview = ( {imageData, title, description, source, url}) => {
   return (
 
       <ProjectInner>
-      <h2>{title}</h2>
+      <h2><a href={url} target="_blank" rel="noopener noreferrer">{title}</a></h2>
       <Image fluid={imageData} alt="title" />
       <p>{description}</p>
+      <p><a href={source} target="_blank" rel="noopener noreferrer">View source code</a> <br />
+      <a href={url} target="_blank" rel="noopener noreferrer">View project demo</a></p>
       </ProjectInner>
     
   )
