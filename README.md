@@ -1,4 +1,6 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+##  Gatsby Coding Page
+This should explain the Gatsby coding page - contents will come later. More about this page is a way for the author to learn Gatsby.  Below is the starter that was used to build the page.
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
