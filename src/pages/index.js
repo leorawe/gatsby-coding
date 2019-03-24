@@ -6,6 +6,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectPreview from "../components/project-preview"
 
+const MyHeading = styled.h1`
+margin: .5rem auto;
+padding: 0 100px;
+`
+
 const ProjectWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
@@ -40,8 +45,9 @@ const IndexPage = () => {
   return (
   <Layout>
     <SEO title="Coding Samples by Leora Wenger" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Coding Samples</h1>
+    <MyHeading>Coding Samples</MyHeading>
     <ProjectWrap>
+    
     {projects.map(({node: project})=>{
     const title = project.title;
     const description = project.description;
