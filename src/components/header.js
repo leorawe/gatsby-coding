@@ -12,6 +12,9 @@ const HeadWrap = styled.div`
     margin: 0 auto;
     margin-bottom: 20px;
     height: 25px;
+    @media (max-width: 550px) {
+    height: auto;
+  }
 `
 const MenuContainer = styled.ul`
     list-style-type: none;
@@ -19,6 +22,10 @@ const MenuContainer = styled.ul`
     display: flex;
     justify-content: stretch;
     flex-wrap: wrap;
+    @media (max-width: 550px) {
+    flex-direction: column;
+    padding-left: 10%;
+  }
 ` 
 
 const LogoWrap = styled.div`

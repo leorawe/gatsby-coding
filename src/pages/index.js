@@ -8,7 +8,7 @@ import ProjectPreview from "../components/project-preview"
 
 const MyHeading = styled.h1`
 margin: .5rem auto;
-padding: 0 100px;
+padding: 0 10%;
 `
 
 const ProjectWrap = styled.div`
