@@ -5,7 +5,7 @@
       "source": "https://github.com/leorawe/calc-react",
       "url": "https://calc-react.netlify.com/",
       "image": "./images/calculator-react.png",
-      "description": "Color palette for buttons. Action is performed based on whether user hits a number, an operator button or the equal button. Save State in array; "
+      "description": "Color palette for buttons. Action is performed based on whether user hits a number, an operator button or the equal button. State is set when a button is clicked. This is done via a function on the main App state. The item clicked is stored in a variable called recent. When a calculation is made, it get stored in an array.  "
     },
     {
       "title": "IEX Trade App",
@@ -13,7 +13,7 @@
       "source": "https://github.com/leorawe/react-iex",
       "url": "https://iex-app.netlify.com/",
       "image": "./images/iex-react.png",
-      "description": "Trading App shows data such as last trade, CEO of company, company description when user types in trade symbol"
+      "description": "Trading App shows data such as last trade, CEO of company, company description when user types in trade symbol into input box."
     },
     {
         "title": "Reddit API App",
@@ -21,6 +21,6 @@
         "source": "https://github.com/leorawe/react-project",
         "url": "https://leorawe.github.io/react-project/",
         "image": "./images/reddit-api.png",
-        "description": "Learn about technologies of Drupal, React, JavaScript via Reddit API"
+        "description": "Learn about technologies of Drupal, React, JavaScript via Reddit API by clicking on a button."
       }
   ]
