@@ -21,6 +21,7 @@ const ProjectInner = styled.div`
       text-decoration: none;
       border-bottom: 2px dotted #ddd;
       color: #666666;
+      font-size: .8rem;
       }  
     a:hover {
       border-bottom: 2px solid #ddd;
