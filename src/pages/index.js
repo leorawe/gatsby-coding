@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectPreview from "../components/project-preview"
+import media from "../components/mediaqueries"
 
 const MyHeading = styled.h1`
 margin: .5rem auto;
@@ -14,8 +15,13 @@ padding: 0 10%;
 const ProjectWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
+    margin: 2rem auto;
+    justify-content: space-around;
+    max-width: 1440px;
+    ${media.desktop`
     margin: .5rem auto;
     justify-content: center;
+  `} 
 `
 
 const IndexPage = () => {

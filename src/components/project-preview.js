@@ -27,11 +27,17 @@ const ProjectInner = styled.div`
       border-bottom: 2px solid #ddd;
     }
 `
+const Styledh2 = styled.h2`
+      a:visited, a:link {
+        font-size: 1.25rem;
+        color: #000000;
+      }
+`
 const ProjectPreview = ( {imageData, title, description, source, url}) => {
   return (
 
       <ProjectInner>
-      <h2><a href={url} target="_blank" rel="noopener noreferrer">{title}</a></h2>
+      <Styledh2><a href={url} target="_blank" rel="noopener noreferrer">{title}</a></Styledh2>
       <Image fluid={imageData} alt="title" />
       <p>{description}</p>
       <p><a href={source} target="_blank" rel="noopener noreferrer">View source code</a> <br />
