@@ -8,10 +8,10 @@ import logo from '../images/leoraw-logo-80px.png'
 
 const HeadWrap = styled.div`
     background: #e9e9e9;
-    padding: 0 calc((100vw - 700px)/2);
+    padding: 0 calc((100vw - 750px)/2);
     margin: 0 auto;
     margin-bottom: 20px;
-    height: 25px;
+    height: 40px;
     @media (max-width: 550px) {
     height: auto;
   }
@@ -29,8 +29,8 @@ const MenuContainer = styled.ul`
 ` 
 
 const LogoWrap = styled.div`
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     padding: 0 5px;
    
 `

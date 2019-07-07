@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const LinkContainer = styled.li`
    margin: 0;
-   padding: 0 10px;
+   padding: 5px 10px;
    &:nth-child(4) {
       flex: 1;
     }
@@ -14,8 +14,8 @@ const StyledLink = styled.a`
    text-decoration: none;
    font-size: .85rem;
     &:hover {
-    color: #666;
-    text-decoration: underline;
+    color: #000000;
+    border-bottom: 1px solid #cccccc;
    
   }
 `
