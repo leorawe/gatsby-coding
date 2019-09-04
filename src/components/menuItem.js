@@ -13,6 +13,8 @@ const StyledLink = styled.a`
    color: #333;
    text-decoration: none;
    font-size: .85rem;
+   font-weight: 700;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     &:hover {
     color: #000000;
     border-bottom: 1px solid #cccccc;
